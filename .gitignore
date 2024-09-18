@@ -1,17 +1,17 @@
-# Ignore arquivos de ambiente virtual
-transcribe_env/
+# Ignore arquivos de ambiente virtual, mas mantenha o .gitkeep
+transcribe_env/*
 !transcribe_env/.gitkeep
 
-# Ignore a pasta CUDA toolkit, mas mantenha o gitkeep
-cuda_toolkit/
+# Ignore a pasta CUDA toolkit, mas mantenha o .gitkeep
+cuda_toolkit/*
 !cuda_toolkit/.gitkeep
 
-# Ignore a pasta whisper_faster_xxl, mas mantenha o gitkeep
-whisper_faster_xxl/
+# Ignore a pasta whisper_faster_xxl, mas mantenha o .gitkeep
+whisper_faster_xxl/*
 !whisper_faster_xxl/.gitkeep
 
-# Ignore arquivos de log de instalação
-windows_rtx_setup/install_logs/
+# Ignore arquivos de log de instalação, mas mantenha o .gitkeep
+windows_rtx_setup/install_logs/*
 !windows_rtx_setup/install_logs/.gitkeep
 
 # Ignore outros arquivos temporários comuns
@@ -19,3 +19,22 @@ __pycache__/
 *.pyc
 *.pyo
 *.log
+
+# Ignore qualquer arquivo temporário de sistema
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Ignore logs gerados automaticamente
+*.log
+
+# Ignore arquivos de compilação ou binários (geralmente não aplicável ao Python, mas só para garantir)
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore pastas de cache ou de build (dependendo do seu projeto)
+build/
+dist/
