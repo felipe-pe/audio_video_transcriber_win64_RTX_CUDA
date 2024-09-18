@@ -1,5 +1,0 @@
-# Ignorar todos os arquivos e pastas
-*
-
-# Exceto o próprio .gitignore
-!.gitignore

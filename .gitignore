@@ -1,0 +1,21 @@
+# Ignore o ambiente virtual, mas mantenha o .gitkeep
+transcribe_env/
+!transcribe_env/.gitkeep
+
+# Ignore a pasta CUDA toolkit, mas mantenha o .gitkeep
+cuda_toolkit/
+!cuda_toolkit/.gitkeep
+
+# Ignore logs de instalação na subpasta install_logs, mas mantenha o .gitkeep
+windows_rtx_setup/install_logs/
+!windows_rtx_setup/install_logs/.gitkeep
+
+# Ignorar todos os arquivos em whisper_faster_xxl, exceto o .gitkeep
+whisper_faster_xxl/
+!whisper_faster_xxl/.gitkeep
+
+# Ignore arquivos temporários comuns e cache
+__pycache__/
+*.pyc
+*.pyo
+*.log
