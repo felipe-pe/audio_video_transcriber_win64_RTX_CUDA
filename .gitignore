@@ -1,40 +1,26 @@
-# Ignore arquivos de ambiente virtual, mas mantenha o .gitkeep
+# Ignorar tudo na pasta transcribe_env, exceto a própria pasta
 transcribe_env/*
 !transcribe_env/.gitkeep
 
-# Ignore a pasta CUDA toolkit, mas mantenha o .gitkeep
-cuda_toolkit/*
-!cuda_toolkit/.gitkeep
+# Ignorar todas as subpastas dentro de transcreve_audios_apps_whisper_faster_xxl
+transcreve_audios_apps_whisper_faster_xxl/**/
+!transcreve_audios_apps_whisper_faster_xxl/*.py
 
-# Ignore a pasta whisper_faster_xxl, mas mantenha o .gitkeep
-whisper_faster_xxl/*
-!whisper_faster_xxl/.gitkeep
-
-# Ignore arquivos de log de instalação, mas mantenha o .gitkeep
-windows_rtx_setup/install_logs/*
-!windows_rtx_setup/install_logs/.gitkeep
-
-# Ignore outros arquivos temporários comuns
-__pycache__/
-*.pyc
-*.pyo
-*.log
-
-# Ignore qualquer arquivo temporário de sistema
-*.swp
-*.swo
+# Ignorar arquivos temporários do sistema
 .DS_Store
 Thumbs.db
 
-# Ignore logs gerados automaticamente
+# Ignorar cache e arquivos compilados
+__pycache__/
+.cache/
+*.pyc
+*.pyo
+
+# Ignorar saídas e outros diretórios não necessários
+outputs/
+transcriptions_samples/
+Faster-Whisper-XXL/
+
+# Outros arquivos a serem ignorados
 *.log
-
-# Ignore arquivos de compilação ou binários (geralmente não aplicável ao Python, mas só para garantir)
-*.exe
-*.dll
-*.so
-*.dylib
-
-# Ignore pastas de cache ou de build (dependendo do seu projeto)
-build/
-dist/
+*.tmp

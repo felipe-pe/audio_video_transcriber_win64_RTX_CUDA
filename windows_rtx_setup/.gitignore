@@ -1,6 +1,0 @@
-# Ignorar o conteúdo da pasta install_logs, mas manter a pasta
-install_logs/*
-!install_logs/.gitkeep
-
-# Manter arquivos Python
-!*.py
