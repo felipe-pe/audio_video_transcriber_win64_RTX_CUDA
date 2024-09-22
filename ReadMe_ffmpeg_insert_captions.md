@@ -1,9 +1,4 @@
----
-author:
-- Seu Nome
-title: Guia Detalhado de Parametrização do Comando FFmpeg para Uso com
-  GPU (CUDA) e CPU
----
+
 
 O FFmpeg é uma ferramenta poderosa para transcodificação de vídeos e
 pode ser configurado tanto para usar a CPU quanto a GPU para melhorar o
